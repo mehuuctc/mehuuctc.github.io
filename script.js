@@ -56,7 +56,7 @@
       const li = document.createElement('li');
       li.className = 'nav__cta-mobile';
       const a = document.createElement('a');
-      a.href = 'mailto:hello@afsanhabib.dev';
+      a.href = 'mailto:afsan.uct@gmail.com';
       a.className = 'btn btn--primary';
       a.textContent = 'Hire me';
       li.appendChild(a);
