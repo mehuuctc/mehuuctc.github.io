@@ -209,3 +209,79 @@
   }
 
 })();
+
+
+
+const contactForm = document.getElementById('contact-form');
+const submitBtn = document.getElementById('submit-btn');
+const successMessage = document.getElementById('form-success');
+
+contactForm.addEventListener('submit', async function (e) {
+  e.preventDefault(); // Stop standard page redirect
+
+  // 1. Basic Client-Side Validation (Since you have 'novalidate' on HTML)
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const message = document.getElementById('message').value.trim();
+  
+  // Clear previous error messages
+  document.getElementById('name-error').textContent = '';
+  document.getElementById('email-error').textContent = '';
+  document.getElementById('message-error').textContent = '';
+  successMessage.textContent = '';
+
+  let hasError = false;
+
+  if (!name) {
+    document.getElementById('name-error').textContent = 'Name is required.';
+    hasError = true;
+  }
+  if (!email) {
+    document.getElementById('email-error').textContent = 'Email is required.';
+    hasError = true;
+  }
+  if (!message) {
+    document.getElementById('message-error').textContent = 'Message is required.';
+    hasError = true;
+  }
+
+  if (hasError) return; // Stop if validation fails
+
+  // 2. Show Loading Spinner
+  submitBtn.classList.add('loading'); // Assumes your CSS triggers the spinner with a .loading class
+  submitBtn.disabled = true;
+  successMessage.style.color = '#fff'; // Adjust color based on your theme
+  successMessage.textContent = 'Sending your message...';
+
+  // 3. Prepare Form Data
+  const formData = new FormData(contactForm);
+
+  try {
+    // 4. Send Request to Web3Forms API
+    const response = await fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      body: formData
+    });
+
+    const result = await response.json();
+
+    if (response.status === 200) {
+      // Success!
+      successMessage.style.color = '#4BB543'; // Green success color
+      successMessage.textContent = 'Message sent successfully! I will get back to you within 24 hours.';
+      contactForm.reset(); // Clear the inputs
+    } else {
+      // API level error
+      successMessage.style.color = '#ff3333';
+      successMessage.textContent = result.message || 'Something went wrong. Please try again.';
+    }
+  } catch (error) {
+    // Network level error
+    successMessage.style.color = '#ff3333';
+    successMessage.textContent = 'Network error. Please check your internet connection and try again.';
+  } finally {
+    // 5. Reset Button UI
+    submitBtn.classList.remove('loading');
+    submitBtn.disabled = false;
+  }
+});
