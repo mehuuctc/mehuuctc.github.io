@@ -4,7 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Afsan Habib — Data Engineer & Django Developer. Building secure, optimized data pipelines backed by 6+ years of backend engineering." />
-  <link rel="icon" type="image/png" href="fav.png">
+  <head>
+    <link rel="icon" type="image/png" href="fav.png">
+</head>
   <title>Afsan Habib — Data Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -16,7 +18,7 @@
   <!-- NAVIGATION  -->
   <header class="site-header" role="banner">
     <nav class="nav container" aria-label="Main navigation">
-      <a href="https://afsan.me/" class="nav__logo" aria-label="Afsan Habib — Home">
+      <a href="#hero" class="nav__logo" aria-label="Afsan Habib — Home">
         <span class="nav__logo-dot"></span>AfsanHabib
       </a>
 
@@ -489,8 +491,9 @@
         <div class="contact__grid">
 
           <div class="contact__form-wrap">
-            <form class="contact-form" id="contact-form" novalidate aria-label="Contact form">
+            <form action="https://api.web3forms.com/submit"  class="contact-form" id="contact-form" novalidate aria-label="Contact form" method="POST">
               <div class="form-group">
+                <input type="hidden" name="access_key" value="0c2607fb-bcec-4550-9018-e0f66fdf6a5b">
                 <label class="form-label" for="name">Full name</label>
                 <input class="form-input" type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required aria-required="true" />
                 <span class="form-error" id="name-error" role="alert" aria-live="polite"></span>
