@@ -1,554 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Afsan Habib — Data Engineer & Django Developer. Building secure, optimized data pipelines backed by 6+ years of backend engineering." />
-  <head>
-    <link rel="icon" type="image/png" href="fav.png">
-</head>
-  <title>Afsan Habib — Data Engineer</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Afsan Habib — AI Engineer &amp; Generative AI Engineer</title>
+<meta name="description" content="Afsan Habib is an AI Engineer and Generative AI Engineer with a Python/Django backend foundation, building practical AI-powered applications: RAG systems, LLM tooling, and production backends.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Afsan Habib — AI Engineer & Generative AI Engineer">
+<meta property="og:description" content="AI Engineer focused on building practical, AI-powered applications on a solid Python/Django backend foundation.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/profile.jpg">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Afsan Habib — AI Engineer & Generative AI Engineer">
+<meta name="twitter:description" content="AI Engineer focused on building practical, AI-powered applications on a solid Python/Django backend foundation.">
+
+<link rel="canonical" href="https://afsanhabib.me/">
+<link rel="icon" href="data:,">
+<link rel="icon" type="image/png" href="fav.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Afsan Habib",
+  "jobTitle": "AI Engineer",
+  "url": "https://afsanhabib.me/",
+  "sameAs": [
+    "https://github.com/AfsanHabib",
+    "https://www.linkedin.com/in/afsan-habib-566340215/"
+  ],
+  "knowsAbout": ["Python", "Django", "Generative AI", "Large Language Models", "RAG", "Prompt Engineering"]
+}
+</script>
 </head>
 <body>
 
-  <!-- NAVIGATION  -->
-  <header class="site-header" role="banner">
-    <nav class="nav container" aria-label="Main navigation">
-      <a href="#hero" class="nav__logo" aria-label="Afsan Habib — Home">
-        <span class="nav__logo-dot"></span>AfsanHabib
-      </a>
+<a class="skip-link" href="#main">Skip to content</a>
 
+<!-- ================= NAV ================= -->
+<header class="site-header" id="siteHeader">
+  <nav class="nav" aria-label="Primary">
+    <a href="#top" class="nav-mark">Afsan Habib<span class="nav-mark-dot">.</span></a>
 
-      <ul class="nav__links" role="list" id="nav-links">
-        <li><a href="#hero"       class="nav__link" data-section="hero">Home</a></li>
-        <li><a href="#about"      class="nav__link" data-section="about">About</a></li>
-        <li><a href="#experience" class="nav__link" data-section="experience">Experience</a></li>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
         
-        <li><a href="#my-skills"  class="nav__link" data-section="my-skills">Skills</a></li>
-        <li><a href="#projects"   class="nav__link" data-section="projects">Projects</a></li>
-        <!-- <li><a href="#contact-me" class="nav__link" data-section="contact-me">Contact</a></li> -->
-      </ul>
-
-      <a href="#contact-me" class="btn btn--primary nav__cta">Contact</a>
-
-      <button
-        class="nav__hamburger"
-        id="hamburger"
-        aria-label="Toggle navigation menu"
-        aria-expanded="false"
-        aria-controls="nav-links"
-      >
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </button>
-    </nav>
-  </header>
-
-  <div class="nav__overlay" id="nav-overlay" aria-hidden="true"></div>
-
-  <main id="main-content">
-
-    <!-- ░░ HERO ░░ -->
-    <section class="hero" id="hero" aria-labelledby="hero-heading">
-      <div class="hero__glow" aria-hidden="true"></div>
-      <div class="container hero__inner">
-
-        <div class="hero__text">
-          <p class="hero__eyebrow">✦ Available for opportunities </p>
-          <h1 class="hero__heading" id="hero-heading">
-            <span class="hero__heading--accent">Data Engineer</span><br />
-            And <br />  <span class="hero__heading--accent">Web Developer</span><br />  
-          </h1>
-
-          <p class="hero__sub">
-            I design robust data pipelines, automate workflows, and build scalable backend system using Python, SQL, and modern data tools.
-          </p>
-          <div class="hero__actions">
-            <a href="#projects" class="btn btn--primary">View my work</a>
-            <a href="#about" class="btn btn--ghost">About me →</a>
-          </div>
-        </div>
-
-        <div class="hero__card-wrap">
-          <div class="hero__card" aria-label="Profile card">
-            <div class="hero__card-frame">
-              <div class="hero__avatar" aria-label="Afsan Habib profile photo">
-                <img
-                  src="img.jpeg"
-                  alt="Afsan Habib — Data Engineer"
-                  class="hero__avatar-img"
-                  width="200"
-                  height="240"
-                  loading="eager"
-                  onerror="this.style.display='none'; this.parentElement.querySelector('.hero__avatar-fallback').style.display='flex';"
-                />
-                <!-- Fallback shown if image fails to load -->
-                <span class="hero__avatar-fallback" aria-hidden="true" style="display:none;">AH</span>
-              </div>
-              <div class="hero__card-badge hero__card-badge--tl">
-                <span class="badge-icon">⚡</span>
-                <span>Data Engineer</span>
-              </div>
-              <div class="hero__card-badge hero__card-badge--br">
-                <span class="badge-icon">★</span>
-                <span>Backend Devloper</span>
-              </div>
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-
-      <div class="hero__scroll-hint" aria-hidden="true">
-        <span class="scroll-line"></span>
-        <span class="scroll-text">scroll</span>
-      </div>
-    </section>
-
-    <!-- ░░ ABOUT ░░ -->
-    <section class="about" id="about" aria-labelledby="about-heading">
-      <div class="about__glow" aria-hidden="true"></div>
-      <div class="container">
-        <div class="section-header">
-          <p class="section-eyebrow">Professional Summery</p>
-          <h2 class="section-heading" id="about-heading">About Me</h2>
-        </div>
-
-        <div class="about__grid">
-          <div class="about__copy">
-            <p class="about__lead">
-              I'm <strong>Afsan Habib</strong> — a Data Engineer with a backend engineering foundation. 
-            </p>
-            <!-- <p class="about__body">
-              A passionate Data Engineer and Backend Developer with over 6 years of experience building scalable web applications, APIs, and modern data solutions.
-            </p> -->
-            <p class="about__body">
-              I started my journey as a Django Developer in 2018, developing secure and high-performance backend systems. In 2024, I transitioned into Data Engineering, where I now work with ETL pipelines, workflow orchestration, data warehousing, and cloud-ready infrastructure using tools like Apache Airflow, PostgreSQL, Docker, Python, and SQL.
-            </p>
-            <div class="about__tags">
-              <!-- <span class="about-tag">Django (2018–2024)</span>
-              <span class="about-tag about-tag--active">Data Engineering (2024–present)</span> -->
-              <span class="about-tag about-tag--active"> <a href="resume.pdf"  download>↓ Download CV</a></span>
-
-
-       
-
-            </div>
-          </div>
-
-          <div class="about__cards">
-            <div class="about-stat-card">
-              <div class="about-stat-card__icon" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              </div>
-              <p class="about-stat-card__num">2018</p>
-              <p class="about-stat-card__label">Career started</p>
-            </div>
-            <div class="about-stat-card about-stat-card--accent">
-              <div class="about-stat-card__icon" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
-              </div>
-              <p class="about-stat-card__num">2024</p>
-              <p class="about-stat-card__label">Pivoted to Data Eng.</p>
-            </div>
-
-
-            <div class="about-stat-card">
-              <div class="about-stat-card__icon" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
-              </div>
-              <p class="about-stat-card__num">Location</p>
-              <p class="about-stat-card__label">Bangladesh</p>
-            </div>
-
-
-            <div class="about-stat-card">
-              <div class="about-stat-card__icon" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-              </div>
-              <p class="about-stat-card__num">Remote</p>
-              <p class="about-stat-card__label">worldwide</p>
-            </div>
-
-            
-          </div>
-        </div>
-      </div>
-    </section>
-
-  
-
-    <!-- ░░ EXPERIENCE ░░ -->
-    <section class="experience" id="experience" aria-labelledby="experience-heading">
-      <div class="container">
-        <div class="section-header">
-          <p class="section-eyebrow">Career journey</p>
-          <h2 class="section-heading" id="experience-heading">Experience</h2>
-          <p class="section-sub">From building robust web apps to engineering data at scale.</p>
-        </div>
-
-        <div class="timeline" role="list">
-
-          <div class="timeline__item timeline__item--current" role="listitem">
-            <div class="timeline__marker" aria-hidden="true">
-              <span class="timeline__dot"></span>
-              <span class="timeline__line"></span>
-            </div>
-            <div class="timeline__card">
-              <div class="timeline__card-header">
-                <div>
-                  <p class="timeline__period">2024 — Present</p>
-                  <h3 class="timeline__role">Data Engineer</h3>
-                  <p class="timeline__company">Freelance / Remote / Various clients</p>
-                </div>
-                <span class="timeline__badge">Current</span>
-              </div>
-              <p class="timeline__desc">
-                <!-- Designing and maintaining production-grade data pipelines using Airflow, dbt, and PySpark on AWS and GCP. My Django background directly informs how I model data schemas, secure credentials, and structure pipeline code — applying software-engineering discipline to data infrastructure that most data-only engineers overlook. -->
-
-
-                  <ul class="timeline-bullets" role="list">
-                <li>Design and maintain end-to-end ETL/ELT pipelines processing millions of records daily using Apache Spark and Apache Airflow.</li>
-                <li>Architect cloud-native data warehousing solutions on Snowflake and BigQuery with optimized query performance and cost efficiency.</li>
-                <li>Leverage deep Django/PostgreSQL experience to model complex data schemas and enforce data integrity at ingestion.</li>
-                <li>Implement CI/CD workflows for pipeline deployments on AWS and GCP with Docker-based containerization.</li>
-              </ul>
-
-
-
-              </p>
-              <ul class="timeline__tags">
-                <li class="tag">Airflow</li>
-                <li class="tag">dbt</li>
-                <li class="tag">PySpark</li>
-                <li class="tag">BigQuery</li>
-                <li class="tag">AWS S3</li>
-                <li class="tag">Docker</li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="timeline__item" role="listitem">
-            <div class="timeline__marker" aria-hidden="true">
-              <span class="timeline__dot"></span>
-              <span class="timeline__line"></span>
-            </div>
-            <div class="timeline__card">
-              <div class="timeline__card-header">
-                <div>
-                  <p class="timeline__period">2018 — 2024</p>
-                  <h3 class="timeline__role">Django Web Developer</h3>
-                  <p class="timeline__company">Freelance / Remote / Various clients</p>
-                </div>
-              </div>
-              <p class="timeline__desc">
-                <!-- Built and scaled full-stack web applications using Django and Django REST Framework for clients across e-commerce, fintech, and SaaS. Designed normalised PostgreSQL schemas, implemented JWT &amp; OAuth2 authentication, and optimised query performance for high-traffic APIs. This six-year foundation is why my data pipelines are secure, observable, and maintainable. -->
-
-
-                 <ul class="timeline-bullets" role="list">
-                <li>Built and maintained high-traffic production web applications serving thousands of concurrent users using Django and Django REST Framework.</li>
-                <li>Designed normalized, performance-tuned PostgreSQL schemas and authored complex ORM queries and raw SQL for analytics use cases.</li>
-                <li>Implemented secure authentication systems, role-based access control, and REST API endpoints consumed by mobile and frontend clients.</li>
-                <li>Maintained containerized development environments with Docker and established Git-based team workflows and code review practices.</li>
-              </ul>
-
-
-              </p>
-              <ul class="timeline__tags">
-                <li class="tag">Django</li>
-                <li class="tag">DRF</li>
-                <li class="tag">PostgreSQL</li>
-                <li class="tag">Celery</li>
-                <li class="tag">Redis</li>
-                <li class="tag">REST APIs</li>
-              </ul>
-            </div>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-
-      <!-- ░░ SKILLS ░░ -->
-    <section class="skills" id="my-skills" aria-labelledby="skills-heading">
-      <div class="skills__glow" aria-hidden="true"></div>
-      <div class="container">
-        <div class="section-header">
-          <p class="section-eyebrow">Capabilities</p>
-          <h2 class="section-heading" id="skills-heading">My Skills</h2>
-          <p class="section-sub">A backend-first toolkit that powers modern data infrastructure.</p>
-        </div>
-
-        <div class="skills__grid">
-
-          <div class="skill-block" role="region" aria-label="Data Engineering skills">
-            <div class="skill-block__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
-            </div>
-            <h3 class="skill-block__title">Data Engineering</h3>
-            <ul class="skill-list" role="list">
-              <li class="skill-item"><span class="skill-dot"></span>Apache Airflow / Prefect</li>
-              <li class="skill-item"><span class="skill-dot"></span>Apache Spark / PySpark</li>
-              <li class="skill-item"><span class="skill-dot"></span>dbt (data build tool)</li>
-              <li class="skill-item"><span class="skill-dot"></span>ETL / ELT Pipelines</li>
-              <li class="skill-item"><span class="skill-dot"></span>BigQuery / Snowflake</li>
-              <li class="skill-item"><span class="skill-dot"></span>Kafka / Streaming</li>
-            </ul>
-          </div>
-
-          <div class="skill-block skill-block--accent" role="region" aria-label="Backend / Django skills">
-            <div class="skill-block__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg>
-            </div>
-            <h3 class="skill-block__title">Backend &amp; Django</h3>
-            <ul class="skill-list" role="list">
-              <li class="skill-item"><span class="skill-dot"></span>Python / Django (6 yrs)</li>
-              <li class="skill-item"><span class="skill-dot"></span>Django REST Framework</li>
-              <li class="skill-item"><span class="skill-dot"></span>FastAPI / Celery</li>
-              <li class="skill-item"><span class="skill-dot"></span>PostgreSQL / MySQL</li>
-              <li class="skill-item"><span class="skill-dot"></span>Redis / Caching</li>
-              <li class="skill-item"><span class="skill-dot"></span>REST &amp; GraphQL APIs</li>
-            </ul>
-          </div>
-
-          <div class="skill-block" role="region" aria-label="Infrastructure & Tools skills">
-            <div class="skill-block__icon" aria-hidden="true">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg>
-            </div>
-            <h3 class="skill-block__title">Infra &amp; Tools</h3>
-            <ul class="skill-list" role="list">
-              <li class="skill-item"><span class="skill-dot"></span>Docker / Docker Compose</li>
-              <li class="skill-item"><span class="skill-dot"></span>AWS (S3, RDS, Lambda)</li>
-              <li class="skill-item"><span class="skill-dot"></span>GCP (BigQuery, GCS)</li>
-              <li class="skill-item"><span class="skill-dot"></span>Git / CI/CD</li>
-              <li class="skill-item"><span class="skill-dot"></span>Linux / Bash</li>
-              <li class="skill-item"><span class="skill-dot"></span>Terraform basics</li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- ░░ PROJECTS ░░ -->
-    <section class="works" id="projects" aria-labelledby="projects-heading">
-      <div class="container">
-        <div class="section-header">
-          <p class="section-eyebrow">Selected work</p>
-          <h2 class="section-heading" id="projects-heading">Projects</h2>
-          <p class="section-sub">Real-world systems built with precision and purpose.</p>
-        </div>
-
-        <div class="works__grid">
-
-          <article class="project-card" tabindex="0" aria-label="Project: FoodPanda Delivery Analytics">
-            <div class="project-card__img">
-              <div class="project-card__mockup" aria-hidden="true">
-                <div class="mockup-browser">
-                  <div class="mockup-bar"><span></span><span></span><span></span></div>
-                  <div class="mockup-screen mockup-screen--pipeline"></div>
-                </div>
-              </div>
-              <div class="project-card__num" aria-hidden="true">01</div>
-            </div>
-            <div class="project-card__body">
-              <h3 class="project-card__title">FoodPanda Delivery Analytics</h3>
-              <p class="project-card__desc">Designed and developed a PostgreSQL-based analytics warehouse inspired by Foodpanda. Implemented advanced SQL analytics, including customer lifetime value, revenue trends, rider performance and operational KPIs using CTEs.</p>
-              <ul class="project-card__tags" aria-label="Technologies used">
-                <li class="tag">SQL</li>
-                <li class="tag">PostgreSQL</li>
-                <li class="tag">Data Warehousing</li>
-                <li class="tag">Git</li>
-              </ul>
-              <a href="https://github.com/AfsanHabib/foodpanda-sql-analytics-project/tree/main" class="project-card__link" aria-label="View FoodPanda Delivery Analytics">View Project →</a>
-            </div>
-          </article>
-
-
-          
-          <article class="project-card" tabindex="0" aria-label="Project: Real-time Analytics API">
-            <div class="project-card__img">
-              <div class="project-card__mockup" aria-hidden="true">
-                <div class="mockup-browser">
-                  <div class="mockup-bar"><span></span><span></span><span></span></div>
-                  <div class="mockup-screen mockup-screen--pipeline"></div>
-                </div>
-              </div>
-              <div class="project-card__num" aria-hidden="true">02</div>
-            </div>
-            <div class="project-card__body">
-              <h3 class="project-card__title">Real-time Analytics API</h3>
-              <p class="project-card__desc">Django + Kafka streaming API serving live aggregations to a React dashboard. Sub-100ms P99 latency via Redis caching and pre-computed rollups.</p>
-             <ul class="project-card__tags" aria-label="Technologies used">
-                <li class="tag">Django</li>
-                <li class="tag">Kafka</li>
-                <li class="tag">Redis</li>
-                <li class="tag">PostgreSQL</li>
-              </ul>
-              <a href="https://github.com/AfsanHabib" class="project-card__link" aria-label="View Real-time Analytics API case study">View Project →</a>
-            </div>
-          </article>
-
-
-
-          <article class="project-card" tabindex="0" aria-label="Project: E-commerce Data Warehouse">
-            <div class="project-card__img">
-              <div class="project-card__mockup" aria-hidden="true">
-                <div class="mockup-browser">
-                  <div class="mockup-bar"><span></span><span></span><span></span></div>
-                  <div class="mockup-screen mockup-screen--pipeline"></div>
-                </div>
-              </div>
-              <div class="project-card__num" aria-hidden="true">03</div>
-            </div>
-            <div class="project-card__body">
-              <h3 class="project-card__title">E-commerce Data Warehouse</h3>
-              <p class="project-card__desc">This project simulates a real-world e-commerce data warehouse built in PostgreSQL. Supports business analytics for revenue, customer behavior, and product performance. E-Commerce Analytics Data Warehouse (PostgreSQL)</p>
-              <ul class="project-card__tags" aria-label="Technologies used">
-                <li class="tag">SQL</li>
-                <li class="tag">PostgreSQL</li>
-                <li class="tag">Data Warehousing</li>
-                <li class="tag">Git</li>
-              </ul>
-              <a href="https://github.com/AfsanHabib/SQL_ecommerce-data-warehouse_PostgreSQL" class="project-card__link" aria-label="View E-commerce Data Warehouse">View Project →</a>
-            </div>
-          </article>
-
-        
-
-          <article class="project-card" tabindex="0" aria-label="Project: ETL Observability & Alerting System">
-            <div class="project-card__img">
-              <div class="project-card__mockup" aria-hidden="true">
-                <div class="mockup-browser">
-                  <div class="mockup-bar"><span></span><span></span><span></span></div>
-                  <div class="mockup-screen mockup-screen--saas"></div>
-                </div>
-              </div>
-              <div class="project-card__num" aria-hidden="true">04</div>
-            </div>
-            <div class="project-card__body">
-              <h3 class="project-card__title">ETL Observability & Alerting System</h3>
-              <p class="project-card__desc">Instrumented a Django-based internal dashboard for monitoring Airflow DAG health, data freshness SLAs, and pipeline failures. Reduced mean-time-to-detection for data incidents by 70%.</p>
-              <ul class="project-card__tags" aria-label="Technologies used">
-                <li class="tag">Airflow</li>
-                <li class="tag">AWS CloudWatch</li>
-                <li class="tag">PostgreSQL</li>
-              </ul>
-              <a href="https://github.com/AfsanHabib" class="project-card__link" aria-label="View ETL Observability & Alerting System">View Project →</a>
-            </div>
-          </article>
-
-
- <article class="project-card" tabindex="0" aria-label="Project: Multi-tenant SaaS Backend">
-            <div class="project-card__img">
-              <div class="project-card__mockup" aria-hidden="true">
-                <div class="mockup-browser">
-                  <div class="mockup-bar"><span></span><span></span><span></span></div>
-                  <div class="mockup-screen mockup-screen--saas"></div>
-                </div>
-              </div>
-              <div class="project-card__num" aria-hidden="true">05</div>
-            </div>
-            <div class="project-card__body">
-              <h3 class="project-card__title">Multi-tenant SaaS Backend</h3>
-              <p class="project-card__desc">Row-level security, tenant-isolated schemas, and a REST + GraphQL dual-interface built in Django REST Framework. Handles 500+ concurrent tenants.</p>
-              <ul class="project-card__tags" aria-label="Technologies used">
-                <li class="tag">DRF</li>
-                <li class="tag">GraphQL</li>
-                <li class="tag">Docker</li>
-              </ul>
-              <a href="https://github.com/AfsanHabib" class="project-card__link" aria-label="View SaaS Backend case study">View case study →</a>
-            </div>
-          </article>
-
-
-
-        </div>
-
-        <div class="works__footer">
-          <a href="https://github.com/AfsanHabib" class="btn btn--outline">See all projects</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ░░ CONTACT ░░ -->
-    <section class="contact" id="contact-me" aria-labelledby="contact-heading">
-      <div class="contact__glow" aria-hidden="true"></div>
-      <div class="container">
-        <div class="section-header">
-          <p class="section-eyebrow">Get in touch</p>
-          <h2 class="section-heading" id="contact-heading">Let's Work Together</h2>
-          <p class="section-sub">Have a data engineering challenge or backend project? I'd love to hear about it.</p>
-        </div>
-
-        <div class="contact__grid">
-
-          <div class="contact__form-wrap">
-            <form action="https://api.web3forms.com/submit"  class="contact-form" id="contact-form" novalidate aria-label="Contact form" method="POST">
-              <div class="form-group">
-                <input type="hidden" name="access_key" value="0c2607fb-bcec-4550-9018-e0f66fdf6a5b">
-                <label class="form-label" for="name">Full name</label>
-                <input class="form-input" type="text" id="name" name="name" placeholder="Your name" autocomplete="name" required aria-required="true" />
-                <span class="form-error" id="name-error" role="alert" aria-live="polite"></span>
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="email">Email address</label>
-                <input class="form-input" type="email" id="email" name="email" placeholder="you@example.com" autocomplete="email" required aria-required="true" />
-                <span class="form-error" id="email-error" role="alert" aria-live="polite"></span>
-              </div>
-              <div class="form-group">
-                <label class="form-label" for="message">Message</label>
-                <textarea class="form-input form-textarea" id="message" name="message" placeholder="Tell me about your project or data challenge..." rows="5" required aria-required="true"></textarea>
-                <span class="form-error" id="message-error" role="alert" aria-live="polite"></span>
-              </div>
-              <button class="btn btn--primary btn--full" type="submit" id="submit-btn">
-                <span class="btn__text">Send message</span>
-                <span class="btn__spinner" aria-hidden="true"></span>
-              </button>
-              <p class="form-success" id="form-success" role="status" aria-live="polite"></p>
-            </form>
-          </div>
-
-          <div class="contact__info">
-            <div class="contact-info-card" aria-label="Email contact">
-              <div class="contact-info-card__icon" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
-              </div>
-              <div>
-                <p class="contact-info-card__label">Email</p>
-                <a href="afsan.uct@gmail.com" class="contact-info-card__value">afsan.uct@gmail.com</a>
-              </div>
-            </div>
-            <div class="contact-info-card" aria-label="Location">
-              <div class="contact-info-card__icon" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              </div>
-              <div>
-                <p class="contact-info-card__label">Location</p>
-                <span class="contact-info-card__value">Remote — available worldwide</span>
-              </div>
-            </div>
-            <div class="contact-info-card" aria-label="Availability">
-              <div class="contact-info-card__icon" aria-hidden="true">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
-              </div>
-              <div>
-                <p class="contact-info-card__label">Availability</p>
-                <span class="contact-info-card__value">Open to freelance &amp; contract</span>
-              </div>
-            </div>
-
-            <div class="contact__social" aria-label="Social links">
-              <p class="contact__social-label">Find me online</p>
-              <div class="social-links">
-                <a href="https://github.com/afsanhabib" class="social-link" aria-label="GitHub profile">
+ <a href="https://github.com/afsanhabib" class="social-link" aria-label="GitHub profile">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
                 </a>
                 <a href="https://www.linkedin.com/in/afsan-habib-566340215" class="social-link" aria-label="LinkedIn profile">
@@ -560,7 +73,415 @@
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
                 </a>
 
-                <a href="https://www.instagram.com/afsanhabib" class="social-link" aria-label="Twitter / X profile">
+                <a href="https://x.com/afsanhabib" class="social-link" aria-label="Twitter / X profile">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                </a>
+
+                <a href="https://www.instagram.com/afsanhabib" class="social-link" aria-label="Instagram profile">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+              </a>
+      <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navLinks" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+<!-- ================= HERO ================= -->
+<section class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow mono">AI Engineer · Generative AI · Python / Django</p>
+      <h1 class="hero-title">Afsan Habib — Building AI-Powered Systems</h1>
+      <p class="hero-sub">AI Engineer focused on practical, AI-powered applications — RAG pipelines, LLM tooling, and prompt-driven workflows — built on a backend foundation of Python and Django. I integrate language models into real systems rather than train them from scratch.</p>
+
+      <div class="hero-ctas">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="#contact" class="btn btn-ghost">Contact Me</a>
+      </div>
+
+      <div class="hero-links mono">
+        <a href="https://github.com/AfsanHabib" target="_blank" rel="noopener">Open to freelance & contract</a>
+        <span class="dot">·</span>
+        <a href="https://www.linkedin.com/in/afsan-habib-566340215/" target="_blank" rel="noopener">Remote — available worldwide </a>
+        
+      </div>
+    </div>
+
+    <div class="hero-visual" aria-hidden="false">
+      <div class="portrait">
+        <img src="img.jpeg" alt="Portrait of Afsan Habib at his desk" width="480" height="560">
+      </div>
+    </div>
+  </div>
+
+  <!-- Signature element: pipeline visualization -->
+  <div class="wrap">
+    <div class="pipeline" role="img" aria-label="Data flows to LLM, to RAG, to AI Agent, to Application">
+      <div class="pipeline-node" data-node="data">
+        <span class="pipeline-dot"></span>
+        <span class="pipeline-label mono">Data</span>
+      </div>
+      <div class="pipeline-line"><span class="pipeline-pulse"></span></div>
+
+      <div class="pipeline-node" data-node="llm">
+        <span class="pipeline-dot"></span>
+        <span class="pipeline-label mono">LLM</span>
+      </div>
+      <div class="pipeline-line"><span class="pipeline-pulse" style="animation-delay:.9s"></span></div>
+
+      <div class="pipeline-node" data-node="rag">
+        <span class="pipeline-dot"></span>
+        <span class="pipeline-label mono">RAG</span>
+      </div>
+      <div class="pipeline-line"><span class="pipeline-pulse" style="animation-delay:1.8s"></span></div>
+
+      <div class="pipeline-node" data-node="agent">
+        <span class="pipeline-dot"></span>
+        <span class="pipeline-label mono">AI Agent</span>
+      </div>
+      <div class="pipeline-line"><span class="pipeline-pulse" style="animation-delay:2.7s"></span></div>
+
+      <div class="pipeline-node" data-node="app">
+        <span class="pipeline-dot pipeline-dot-end"></span>
+        <span class="pipeline-label mono">Application</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="section" id="about">
+  <div class="wrap">
+    <p class="section-eyebrow mono">01 — About</p>
+    <div class="about-grid">
+      <h2 class="section-title">From Django backends to production AI applications.</h2>
+      <div class="about-body">
+        <p>I’m an AI Engineer focused on building practical AI-powered applications and intelligent solutions using Python, Generative AI, APIs, and modern AI technologies.</p> 
+        
+        <p> 
+          Before transitioning into AI engineering, I worked as a Django Developer, where I built web applications and backend systems. Today, I combine my software development experience with AI to create useful, scalable, and real-world products while continuously exploring the evolving world of artificial intelligence.</p>
+
+        <p>I enjoy the problems that sit between AI and backend engineering: getting retrieval accurate enough to trust, keeping LLM output structured and validated, and making an AI feature behave like a normal, dependable part of a system. </p>
+      </div>
+    </div>
+
+    <div class="about-facts">
+      <div class="fact">
+        <span class="fact-label mono">Base</span>
+        <span class="fact-value">Chattogram, Bangladesh</span>
+      </div>
+      <div class="fact">
+        <span class="fact-label mono">Status</span>
+        <span class="fact-value">Freelance / open to roles</span>
+      </div>
+      <div class="fact">
+        <span class="fact-label mono">Core stack</span>
+        <span class="fact-value">Python, Django, LLM APIs</span>
+      </div>
+      <div class="fact">
+        <span class="fact-label mono">Focus</span>
+        <span class="fact-value">RAG &amp; applied Generative AI</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section class="section section-alt" id="skills">
+  <div class="wrap">
+    <p class="section-eyebrow mono">02 — Skills</p>
+    <h2 class="section-title">What I build with.</h2>
+    <p class="section-lead">Grouped by where each piece sits in an AI application — from language to model to interface. Kept to technologies actually used in shipped work.</p>
+
+    <div class="skills-grid">
+
+  
+
+
+
+            <div class="skill-card">
+        <h3 class="skill-cat mono">Programming</h3>
+        <ul class="skill-tags">
+          <li>Python</li><li>JavaScript</li><li>C/C++</li><li>SQL</li>
+        </ul>
+      </div>
+      <div class="skill-card">
+        <h3 class="skill-cat mono">Backend / Tools &amp; Infra</h3>
+        <ul class="skill-tags">
+          <li>Django</li><li>REST APIs</li><li>PostgreSQL</li><li>Git</li><li>Docker</li><li>Qdrant</li><li>Cloud Deployment</li>
+        </ul>
+      </div>
+
+
+
+          <div class="skill-card skill-card-wide">
+        <h3 class="skill-cat mono">AI / Generative AI</h3>
+        <ul class="skill-tags">
+          <li>LLMs</li><li>Generative AI</li><li>Prompt Engineering</li><li>RAG</li><li>Embeddings</li><li>Semantic Search</li><li>Vector Databases</li><li>OpenAI API</li><li>Gemini API</li><li>LangChain</li><li>LangGraph</li><li>LLMOps</li>
+        </ul>
+      </div>
+    
+
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="section" id="projects">
+  <div class="wrap">
+    <p class="section-eyebrow mono">03 — Projects</p>
+    <h2 class="section-title">Selected work, pulled straight from GitHub.</h2>
+    <p class="section-lead">Six public repositories, filtered by category. Every link goes to real, working source code.</p>
+
+    <div class="filter-bar" id="filterBar" role="tablist" aria-label="Filter projects by category">
+      <button class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+      <button class="filter-btn" data-filter="genai" role="tab" aria-selected="false">Generative AI</button>
+      <button class="filter-btn" data-filter="backend" role="tab" aria-selected="false">Backend</button>
+      <button class="filter-btn" data-filter="data" role="tab" aria-selected="false">Data</button>
+      <button class="filter-btn" data-filter="other" role="tab" aria-selected="false">Other</button>
+    </div>
+
+    <div class="project-grid" id="projectGrid">
+
+      <article class="project-card" data-cat="genai">
+        <div class="project-top">
+          <span class="project-tag mono">Generative AI</span>
+          <span class="project-date mono">Featured</span>
+        </div>
+        <h3 class="project-name">PromptRefine</h3>
+        <p class="project-desc">An AI-powered prompt engineering workspace that scores, critiques, and rewrites prompts before they're sent to a model — combining deterministic Python analysis with Gemini-driven semantic evaluation.</p>
+        <ul class="project-features">
+          <li>Hybrid scoring: local heuristics + Gemini analysis</li>
+          <li>Structured LLM output validated with Pydantic</li>
+          <li>Prompt history persisted in SQLite</li>
+        </ul>
+        <div class="project-stack mono">Python · Streamlit · Gemini API · Pydantic · SQLite</div>
+        <div class="project-links">
+          <a href="https://github.com/AfsanHabib/PromptRefine_AI_Project" target="_blank" rel="noopener">Source →</a>
+          <a href="https://afsan-promptrefine.streamlit.app/" target="_blank" rel="noopener">Live demo →</a>
+        </div>
+      </article>
+
+
+          <article class="project-card" data-cat="genai">
+        <div class="project-top">
+          <span class="project-tag mono">Generative AI</span>
+          <span class="project-date mono">Featured</span>
+        </div>
+        <h3 class="project-name">Agentic GitHub PR Auditor</h3>
+        <p class="project-desc">An autonomous CI/CD agent that ingests pull requests, executes static code analysis alongside LLM-driven security audits, generates failing test cases, and automatically commits self-healing patch suggestions.</p>
+        <ul class="project-features">
+          <li>Implements self-reflection and execution loops with LangGraph to validate generated code patches locally</li>
+          <li>Enforces schema safety via Pydantic for automated JSON PR review responses</li>
+          <li>Integrates AST code parsing with hybrid Qdrant embeddings for contextual repo-wide understanding</li>
+        </ul>
+        <div class="project-stack mono">Python · LangGraph · Qdrant · Docker · GitHub Actions API</div>
+        <div class="project-links">
+          <a href="https://github.com/AfsanHabib/PromptRefine_AI_Project" target="_blank" rel="noopener">Source →</a>
+          <a href="https://afsan-promptrefine.streamlit.app/" target="_blank" rel="noopener">Live demo →</a>
+        </div>
+      </article>
+
+
+
+
+      <article class="project-card" data-cat="genai">
+        <div class="project-top">
+          <span class="project-tag mono">Generative AI</span>
+          <span class="project-date mono">Featured</span>
+        </div>
+        <h3 class="project-name">DocuQuery — RAG Engine</h3>
+        <p class="project-desc">A multi-PDF intelligence platform: hybrid retrieval combining BM25 keyword search with dense vector search in Qdrant, cross-encoder re-ranking, and streamed, source-cited answers from Gemini.</p>
+        <ul class="project-features">
+          <li>Hybrid retrieval — BM25 + dense vector search</li>
+          <li>Cross-encoder re-ranking for precision</li>
+          <li>Streamed responses with source citations</li>
+        </ul>
+        <div class="project-stack mono">Python · Streamlit · Qdrant · Gemini API</div>
+        <div class="project-links">
+          <a href="https://github.com/AfsanHabib/DocuQuery_RAG_AI" target="_blank" rel="noopener">Source →</a>
+          <a href="https://afsan-docuquery.streamlit.app/" target="_blank" rel="noopener">Live demo →</a>
+        </div>
+      </article>
+
+      
+
+      <article class="project-card" data-cat="data">
+        <div class="project-top">
+          <span class="project-tag mono">Data</span>
+          <span class="project-date mono">PostgreSQL</span>
+        </div>
+        <h3 class="project-name">E-commerce Data Warehouse</h3>
+        <p class="project-desc">An advanced PostgreSQL data warehouse built on a star schema, with analytics queries, window functions, views, triggers, and query optimization work.</p>
+        <div class="project-stack mono">PostgreSQL · PL/pgSQL</div>
+        <div class="project-links">
+          <a href="https://github.com/AfsanHabib/SQL_ecommerce-data-warehouse_PostgreSQL" target="_blank" rel="noopener">Source →</a>
+        </div>
+      </article>
+
+      <article class="project-card" data-cat="data">
+        <div class="project-top">
+          <span class="project-tag mono">Data</span>
+          <span class="project-date mono">SQL / BI</span>
+        </div>
+        <h3 class="project-name">Foodpanda SQL Analytics</h3>
+        <p class="project-desc">A data warehouse and business-intelligence project modeled on Foodpanda's operations — schema design plus analytical queries over the data.</p>
+        <div class="project-stack mono">PostgreSQL · PL/pgSQL</div>
+        <div class="project-links">
+          <a href="https://github.com/AfsanHabib/foodpanda-sql-analytics-project" target="_blank" rel="noopener">Source →</a>
+        </div>
+      </article>
+
+
+      <article class="project-card" data-cat="backend">
+        <div class="project-top">
+          <span class="project-tag mono">Backend</span>
+          <span class="project-date mono">Django</span>
+        </div>
+        <h3 class="project-name">Face Mask Detection Alert System</h3>
+        <p class="project-desc">A Django web application wrapping a computer-vision detection model with an alerting layer — the backend and application structure around a model, not just the model itself.</p>
+        <div class="project-stack mono">Python · Django</div>
+        <div class="project-links">
+          <a href="https://github.com/AfsanHabib/Django-Web-App-Face-Mask-Detection-Alert-System" target="_blank" rel="noopener">Source →</a>
+        </div>
+      </article>
+
+
+   
+
+
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= JOURNEY / EXPERIENCE ================= -->
+<section class="section section-alt" id="journey">
+  <div class="wrap">
+    <p class="section-eyebrow mono">04 — Journey</p>
+    <h2 class="section-title">From Backend Architecture to Applied AI</h2>
+    <p class="section-lead">Leveraging a strong foundation in Python and Django backend systems to build production-grade AI applications.</p>
+
+    <ol class="timeline">
+      <li class="timeline-item">
+        <span class="timeline-marker mono">Freelance / Remote / Various clients - (2025 — Present)</span>
+        <h3 class="timeline-title">AI Engineer </h3>
+        <p class="timeline-desc">
+          - Architecting and deploying production-grade Generative AI applications, focusing on RAG pipelines, custom LLM tooling, and agentic workflows. <br> <br>
+
+          -  Integrating advanced vector databases, embedding model management, and LLMOps practices to ensure low-latency, deterministic AI outputs in production environments.  <br>
+
+        </p>
+      </li>
+
+
+
+      <li class="timeline-item">
+        <span class="timeline-marker mono">Freelance / Remote / Various clients - (2018 — 2024)</span>
+        <h3 class="timeline-title">Python &amp; Django development</h3>
+
+        <p class="timeline-desc">
+          - Designed and built scalable backend web applications, REST APIs, and relational database schemas using Python and Django. <br> <br>  
+          - Engineered complex PostgreSQL databases, including star-schema data warehouses, custom PL/pgSQL analytics queries, and performance-tuned database indexing <br>  <br>                     
+          - Integrated third-party APIs, authentication systems, and cloud deployments while maintaining production software reliability and code quality. <br> <br>  
+          - Maintained containerized development environments with Docker and established Git-based team workflows and code review practices.
+  
+        </p>
+
+
+        
+      </li>
+     
+    </ol>
+  </div>
+</section>
+
+
+
+
+
+
+<!-- ================= CONTACT ================= -->
+<section class="section" id="contact">
+  <div class="wrap contact-grid">
+    <div>
+      <p class="section-eyebrow mono">05 — Contact</p>
+      <h2 class="section-title">Building something with AI?</h2>
+      <p class="section-lead">Let's Work Together</p>
+
+      <ul class="contact-list mono">
+        <li><a href="mailto:afsan.uct@gmail.com">afsan.uct@gmail.com</a></li>
+        <li><a href="https://github.com/AfsanHabib" target="_blank" rel="noopener">github.com/AfsanHabib</a></li>
+
+        <br> <br> <br>
+
+        <li><a href="mailto:afsan.uct@gmail.com">Availability -</a></li>
+        <li><a href="mailto:afsan.uct@gmail.com"> -->Open to freelance &amp; contract</a></li>
+
+
+        
+      </ul>
+    </div>
+
+    <form class="contact-form" id="contactForm" novalidate>
+      <div class="form-row">
+        <label for="cf-name">Name</label>
+        <input type="text" id="cf-name" name="name" autocomplete="name" required>
+        <span class="form-error" id="err-name"></span>
+      </div>
+      <div class="form-row">
+        <label for="cf-email">Email</label>
+        <input type="email" id="cf-email" name="email" autocomplete="email" required>
+        <span class="form-error" id="err-email"></span>
+      </div>
+      <div class="form-row">
+        <label for="cf-subject">Subject</label>
+        <input type="text" id="cf-subject" name="subject" required>
+        <span class="form-error" id="err-subject"></span>
+      </div>
+      <div class="form-row">
+        <label for="cf-message">Message</label>
+        <textarea id="cf-message" name="message" rows="5" required></textarea>
+        <span class="form-error" id="err-message"></span>
+      </div>
+      <!-- Honeypot spam trap -->
+      <div class="form-hp" aria-hidden="true">
+        <label for="cf-website">Website</label>
+        <input type="text" id="cf-website" name="website" tabindex="-1" autocomplete="off">
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block">Send message</button>
+      <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <p class="mono">© <span id="year"></span> Afsan Habib</p>
+    <div class="footer-links">
+
+      
+ <a href="https://github.com/afsanhabib" class="social-link" aria-label="GitHub profile">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+                </a>
+                <a href="https://www.linkedin.com/in/afsan-habib-566340215" class="social-link" aria-label="LinkedIn profile">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                </a>
+
+         
+              <a href="https://www.facebook.com/afsanhabib10" class="social-link" aria-label="Facebook profile">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                </a>
+
+                <a href="https://x.com/afsanhabib" class="social-link" aria-label="Twitter / X profile">
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
                 </a>
 
@@ -568,24 +489,12 @@
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
               </a>
 
-              </div>
-            </div>
-          </div>
 
-        </div>
-      </div>
-    </section>
 
-  </main>
-
-  <!-- ░░ FOOTER ░░ -->
-  <footer class="site-footer" role="contentinfo">
-    <div class="container site-footer__inner">
-      <p class="site-footer__copy">© 2026 | All Right Reserved</p>
-      <a href="#hero" class="site-footer__back" aria-label="Back to top">↑ Back to top</a>
     </div>
-  </footer>
+  </div>
+</footer>
 
-  <script src="script.js"></script>
+<script src="main.js"></script>
 </body>
 </html>
